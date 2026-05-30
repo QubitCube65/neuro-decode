@@ -23,15 +23,6 @@ Brain-Computer Interface (BCI) research.
 | `02_preprocessing.ipynb` | Bandpass filtering and epoching |
 | `03_classification.ipynb` | Feature extraction and LDA classification |
 
-## Results
-
-| Metric | Value |
-|---|---|
-| Classifier | Linear Discriminant Analysis |
-| Features | Variance of C3, Cz, C4 channels |
-| Cross-val accuracy | 70.0% ± 12.5% |
-| Chance level | 50% |
-
 ## Setup
 
 ```bash
