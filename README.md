@@ -13,8 +13,9 @@ Brain-Computer Interface (BCI) research.
 - Segments continuous EEG into epochs around motor imagery events
 - Applies Common Spatial Patterns (CSP) for automatic feature extraction
 - Compares multiple classifiers: LDA, SVM, Random Forest
+- Implements EEGNet (Lawhern et al., 2018) from scratch in PyTorch
 - Evaluates per-subject accuracy across 20 subjects
-- Demonstrates the overfitting problem with small EEG datasets
+- Demonstrates overfitting, BCI illiteracy, and cross-subject generalization
 
 ## Notebooks
 
@@ -25,6 +26,7 @@ Brain-Computer Interface (BCI) research.
 | `03_classification.ipynb` | Feature extraction and LDA classification |
 | `04_csp_classification.ipynb` | CSP pipeline and classifier comparison |
 | `05_per_subject_analysis.ipynb` | Per-subject accuracy across 20 subjects |
+| `06_eegnet.ipynb` | EEGNet from scratch in PyTorch |
 
 ## Setup
 
@@ -40,4 +42,9 @@ The EEG data used in this project are obtained from the *EEG Motor Movement/Imag
 > Schalk, G. (2009). EEG Motor Movement/Imagery Dataset (Version 1.0.0). PhysioNet. DOI: 10.13026/C28G6P
 
 Dataset URL: https://doi.org/10.13026/C28G6P
+
+## References
+
+> Lawhern, V. J., et al. (2018). EEGNet: a compact convolutional neural network
+> for EEG-based brain-computer interfaces. Journal of Neural Engineering, 15(5).
 
