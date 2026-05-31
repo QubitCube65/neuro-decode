@@ -11,9 +11,10 @@ Brain-Computer Interface (BCI) research.
 - Loads real EEG data from the PhysioNet EEGBCI dataset (109 subjects)
 - Preprocesses raw signals with a bandpass filter (8–30 Hz)
 - Segments continuous EEG into epochs around motor imagery events
-- Extracts features from motor cortex channels (C3, Cz, C4)
-- Trains a Linear Discriminant Analysis (LDA) classifier
-- Evaluates with stratified 5-fold cross-validation (~70% accuracy)
+- Applies Common Spatial Patterns (CSP) for automatic feature extraction
+- Compares multiple classifiers: LDA, SVM, Random Forest
+- Evaluates per-subject accuracy across 20 subjects
+- Demonstrates the overfitting problem with small EEG datasets
 
 ## Notebooks
 
@@ -22,6 +23,8 @@ Brain-Computer Interface (BCI) research.
 | `01_load_and_explore.ipynb` | Load and inspect raw EEG data |
 | `02_preprocessing.ipynb` | Bandpass filtering and epoching |
 | `03_classification.ipynb` | Feature extraction and LDA classification |
+| `04_csp_classification.ipynb` | CSP pipeline and classifier comparison |
+| `05_per_subject_analysis.ipynb` | Per-subject accuracy across 20 subjects |
 
 ## Setup
 
