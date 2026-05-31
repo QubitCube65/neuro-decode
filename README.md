@@ -30,8 +30,11 @@ conda create -n neuro-decode python=3.11
 conda activate neuro-decode
 pip install -r requirements.txt
 ```
+## Data Source
 
-## Dataset
+The EEG data used in this project are obtained from the *EEG Motor Movement/Imagery Dataset* published by PhysioNet.
 
-PhysioNet EEG Motor Movement/Imagery Dataset - automatically downloaded 
-via MNE-Python on first run.
+> Schalk, G. (2009). EEG Motor Movement/Imagery Dataset (Version 1.0.0). PhysioNet. DOI: 10.13026/C28G6P
+
+Dataset URL: https://doi.org/10.13026/C28G6P
+
