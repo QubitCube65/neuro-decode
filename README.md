@@ -8,9 +8,6 @@ Brain-Computer Interface (BCI) research.
 
 ## What this project does
 
-
-## What this project does
-
 - Loads real EEG data from the PhysioNet EEGBCI dataset (109 subjects)
 - Preprocesses raw signals with a bandpass filter (8–30 Hz)
 - Segments continuous EEG into epochs around motor imagery events
