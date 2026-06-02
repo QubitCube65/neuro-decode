@@ -8,14 +8,18 @@ Brain-Computer Interface (BCI) research.
 
 ## What this project does
 
+
+## What this project does
+
 - Loads real EEG data from the PhysioNet EEGBCI dataset (109 subjects)
 - Preprocesses raw signals with a bandpass filter (8–30 Hz)
 - Segments continuous EEG into epochs around motor imagery events
 - Applies Common Spatial Patterns (CSP) for automatic feature extraction
 - Compares multiple classifiers: LDA, SVM, Random Forest
 - Implements EEGNet (Lawhern et al., 2018) from scratch in PyTorch
-- Evaluates per-subject accuracy across 20 subjects
+- Evaluates per-subject accuracy across all 109 subjects
 - Demonstrates overfitting, BCI illiteracy, and cross-subject generalization
+- Leave-one-subject-out (LOSO) cross-validation for realistic evaluation
 
 ## Notebooks
 
@@ -27,6 +31,7 @@ Brain-Computer Interface (BCI) research.
 | `04_csp_classification.ipynb` | CSP pipeline and classifier comparison |
 | `05_per_subject_analysis.ipynb` | Per-subject accuracy across 20 subjects |
 | `06_eegnet.ipynb` | EEGNet from scratch in PyTorch |
+| `07_full_dataset.ipynb` | Full dataset: all 109 subjects + LOSO |
 
 ## Setup
 
@@ -36,7 +41,7 @@ conda activate neuro-decode
 pip install -r requirements.txt
 ```
 ## Data Source
-
+A
 The EEG data used in this project are obtained from the *EEG Motor Movement/Imagery Dataset* published by PhysioNet.
 
 > Schalk, G. (2009). EEG Motor Movement/Imagery Dataset (Version 1.0.0). PhysioNet. DOI: 10.13026/C28G6P
